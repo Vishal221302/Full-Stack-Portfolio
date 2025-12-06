@@ -4245,34 +4245,6 @@ function Contact() {
             })["Contact.useEffect"];
         }
     }["Contact.useEffect"], []);
-    //   const handleSubmit = async (e: React.FormEvent) => {
-    //   e.preventDefault();
-    //   setIsSubmitting(true);
-    //   try {
-    //     // Send data to Google Sheet
-    //     const response = await fetch(
-    //       "https://script.google.com/macros/s/AKfycbyL-tmm_PUPauWy-UabmpfvWT1gMPJxE2142EkUTa1fND69olf9mlVuLff5H2XOw1uk/exec",
-    //       {
-    //         method: "POST",
-    //         body: JSON.stringify(formData),
-    //       }
-    //     );
-    //     const data = await response.json();
-    //     if (data.success) {
-    //       setSubmitted(true);
-    //       setFormData({ name: "", email: "", message: "" });
-    //       // Hide success message after 4 seconds
-    //       setTimeout(() => setSubmitted(false), 4000);
-    //     } else {
-    //       console.error("Google Script Error:", data);
-    //       alert("Something went wrong!");
-    //     }
-    //   } catch (error) {
-    //     console.error("Request Failed:", error);
-    //     alert("Error sending data to Google Sheets.");
-    //   }
-    //   setIsSubmitting(false);
-    // };
     const handleSubmit = async (e)=>{
         e.preventDefault();
         setIsSubmitting(true);
@@ -4364,20 +4336,20 @@ function Contact() {
                         className: "absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-rose-500 to-amber-500 rounded-full blur-3xl"
                     }, void 0, false, {
                         fileName: "[project]/components/contact.tsx",
-                        lineNumber: 161,
+                        lineNumber: 128,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute bottom-1/4 right-1/4 w-96 h-96 bg-gradient-to-r from-sky-500 to-emerald-500 rounded-full blur-3xl"
                     }, void 0, false, {
                         fileName: "[project]/components/contact.tsx",
-                        lineNumber: 162,
+                        lineNumber: 129,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/contact.tsx",
-                lineNumber: 160,
+                lineNumber: 127,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4393,7 +4365,7 @@ function Contact() {
                                         className: "w-4 h-4 text-amber-400"
                                     }, void 0, false, {
                                         fileName: "[project]/components/contact.tsx",
-                                        lineNumber: 169,
+                                        lineNumber: 136,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4401,13 +4373,13 @@ function Contact() {
                                         children: "LET'S CONNECT"
                                     }, void 0, false, {
                                         fileName: "[project]/components/contact.tsx",
-                                        lineNumber: 170,
+                                        lineNumber: 137,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/contact.tsx",
-                                lineNumber: 168,
+                                lineNumber: 135,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -4417,12 +4389,12 @@ function Contact() {
                                     children: "Get In Touch"
                                 }, void 0, false, {
                                     fileName: "[project]/components/contact.tsx",
-                                    lineNumber: 175,
+                                    lineNumber: 142,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/contact.tsx",
-                                lineNumber: 174,
+                                lineNumber: 141,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4430,13 +4402,13 @@ function Contact() {
                                 children: "Ready to collaborate? Let's discuss your project and create something amazing together."
                             }, void 0, false, {
                                 fileName: "[project]/components/contact.tsx",
-                                lineNumber: 179,
+                                lineNumber: 146,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/contact.tsx",
-                        lineNumber: 167,
+                        lineNumber: 134,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4465,25 +4437,25 @@ function Contact() {
                                                                         className: `w-5 h-5 ${info.color.split(' ')[0].replace('from-', 'text-')}`
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/contact.tsx",
-                                                                        lineNumber: 201,
+                                                                        lineNumber: 168,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/contact.tsx",
-                                                                    lineNumber: 200,
+                                                                    lineNumber: 167,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"], {
                                                                     className: "w-4 h-4 text-gray-400  group-hover:opacity-100 transition-opacity"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/contact.tsx",
-                                                                    lineNumber: 203,
+                                                                    lineNumber: 170,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/contact.tsx",
-                                                            lineNumber: 199,
+                                                            lineNumber: 166,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4493,7 +4465,7 @@ function Contact() {
                                                                     children: info.title
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/contact.tsx",
-                                                                    lineNumber: 206,
+                                                                    lineNumber: 173,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4501,7 +4473,7 @@ function Contact() {
                                                                     children: info.info
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/contact.tsx",
-                                                                    lineNumber: 207,
+                                                                    lineNumber: 174,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4509,30 +4481,30 @@ function Contact() {
                                                                     children: info.description
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/contact.tsx",
-                                                                    lineNumber: 208,
+                                                                    lineNumber: 175,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/contact.tsx",
-                                                            lineNumber: 205,
+                                                            lineNumber: 172,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/contact.tsx",
-                                                    lineNumber: 198,
+                                                    lineNumber: 165,
                                                     columnNumber: 21
                                                 }, this)
                                             }, index, false, {
                                                 fileName: "[project]/components/contact.tsx",
-                                                lineNumber: 192,
+                                                lineNumber: 159,
                                                 columnNumber: 19
                                             }, this);
                                         })
                                     }, void 0, false, {
                                         fileName: "[project]/components/contact.tsx",
-                                        lineNumber: 188,
+                                        lineNumber: 155,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4543,7 +4515,7 @@ function Contact() {
                                                 children: "Connect on Social"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/contact.tsx",
-                                                lineNumber: 218,
+                                                lineNumber: 185,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4563,12 +4535,12 @@ function Contact() {
                                                                             className: `w-5 h-5 ${social.color.split(' ')[0].replace('from-', 'text-')}`
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/components/contact.tsx",
-                                                                            lineNumber: 230,
+                                                                            lineNumber: 197,
                                                                             columnNumber: 27
                                                                         }, this)
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/contact.tsx",
-                                                                        lineNumber: 229,
+                                                                        lineNumber: 196,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4578,7 +4550,7 @@ function Contact() {
                                                                                 children: social.label
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/contact.tsx",
-                                                                                lineNumber: 233,
+                                                                                lineNumber: 200,
                                                                                 columnNumber: 27
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4586,19 +4558,19 @@ function Contact() {
                                                                                 children: social.username
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/components/contact.tsx",
-                                                                                lineNumber: 234,
+                                                                                lineNumber: 201,
                                                                                 columnNumber: 27
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/components/contact.tsx",
-                                                                        lineNumber: 232,
+                                                                        lineNumber: 199,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/contact.tsx",
-                                                                lineNumber: 228,
+                                                                lineNumber: 195,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4606,25 +4578,25 @@ function Contact() {
                                                                 children: "Follow →"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/contact.tsx",
-                                                                lineNumber: 237,
+                                                                lineNumber: 204,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, index, true, {
                                                         fileName: "[project]/components/contact.tsx",
-                                                        lineNumber: 223,
+                                                        lineNumber: 190,
                                                         columnNumber: 21
                                                     }, this);
                                                 })
                                             }, void 0, false, {
                                                 fileName: "[project]/components/contact.tsx",
-                                                lineNumber: 219,
+                                                lineNumber: 186,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/contact.tsx",
-                                        lineNumber: 217,
+                                        lineNumber: 184,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4642,25 +4614,25 @@ function Contact() {
                                                                 className: "w-3 h-3 rounded-full bg-emerald-500"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/contact.tsx",
-                                                                lineNumber: 251,
+                                                                lineNumber: 218,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "absolute -inset-1 rounded-full bg-emerald-500/20 animate-ping"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/contact.tsx",
-                                                                lineNumber: 252,
+                                                                lineNumber: 219,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/contact.tsx",
-                                                        lineNumber: 250,
+                                                        lineNumber: 217,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/contact.tsx",
-                                                    lineNumber: 249,
+                                                    lineNumber: 216,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4671,7 +4643,7 @@ function Contact() {
                                                             children: "Current Availability"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/contact.tsx",
-                                                            lineNumber: 256,
+                                                            lineNumber: 223,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4679,7 +4651,7 @@ function Contact() {
                                                             children: "I'm currently available for new projects and collaborations."
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/contact.tsx",
-                                                            lineNumber: 257,
+                                                            lineNumber: 224,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4690,7 +4662,7 @@ function Contact() {
                                                                     children: "✅ Accepting new work"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/contact.tsx",
-                                                                    lineNumber: 261,
+                                                                    lineNumber: 228,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4698,7 +4670,7 @@ function Contact() {
                                                                     children: "•"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/contact.tsx",
-                                                                    lineNumber: 262,
+                                                                    lineNumber: 229,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -4706,36 +4678,36 @@ function Contact() {
                                                                     children: "Typically responds in 2-4 hours"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/contact.tsx",
-                                                                    lineNumber: 263,
+                                                                    lineNumber: 230,
                                                                     columnNumber: 21
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/contact.tsx",
-                                                            lineNumber: 260,
+                                                            lineNumber: 227,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/contact.tsx",
-                                                    lineNumber: 255,
+                                                    lineNumber: 222,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/contact.tsx",
-                                            lineNumber: 248,
+                                            lineNumber: 215,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/contact.tsx",
-                                        lineNumber: 247,
+                                        lineNumber: 214,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/contact.tsx",
-                                lineNumber: 186,
+                                lineNumber: 153,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4755,12 +4727,12 @@ function Contact() {
                                                                 className: "w-5 h-5 text-amber-400"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/contact.tsx",
-                                                                lineNumber: 277,
+                                                                lineNumber: 244,
                                                                 columnNumber: 21
                                                             }, this)
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/contact.tsx",
-                                                            lineNumber: 276,
+                                                            lineNumber: 243,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -4768,13 +4740,13 @@ function Contact() {
                                                             children: "Send a Message"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/contact.tsx",
-                                                            lineNumber: 279,
+                                                            lineNumber: 246,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/contact.tsx",
-                                                    lineNumber: 275,
+                                                    lineNumber: 242,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -4782,13 +4754,13 @@ function Contact() {
                                                     children: "Fill out the form below and I'll get back to you as soon as possible."
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/contact.tsx",
-                                                    lineNumber: 281,
+                                                    lineNumber: 248,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/contact.tsx",
-                                            lineNumber: 274,
+                                            lineNumber: 241,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -4803,7 +4775,7 @@ function Contact() {
                                                             children: "Your Name"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/contact.tsx",
-                                                            lineNumber: 289,
+                                                            lineNumber: 256,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4821,7 +4793,7 @@ function Contact() {
                                                                     placeholder: "John Doe"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/contact.tsx",
-                                                                    lineNumber: 291,
+                                                                    lineNumber: 258,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4829,19 +4801,19 @@ function Contact() {
                                                                     children: "👤"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/contact.tsx",
-                                                                    lineNumber: 299,
+                                                                    lineNumber: 266,
                                                                     columnNumber: 21
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/contact.tsx",
-                                                            lineNumber: 290,
+                                                            lineNumber: 257,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/contact.tsx",
-                                                    lineNumber: 288,
+                                                    lineNumber: 255,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4852,7 +4824,7 @@ function Contact() {
                                                             children: "Email Address"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/contact.tsx",
-                                                            lineNumber: 307,
+                                                            lineNumber: 274,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4870,7 +4842,7 @@ function Contact() {
                                                                     placeholder: "john@example.com"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/contact.tsx",
-                                                                    lineNumber: 309,
+                                                                    lineNumber: 276,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4878,19 +4850,19 @@ function Contact() {
                                                                     children: "✉️"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/contact.tsx",
-                                                                    lineNumber: 317,
+                                                                    lineNumber: 284,
                                                                     columnNumber: 21
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/contact.tsx",
-                                                            lineNumber: 308,
+                                                            lineNumber: 275,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/contact.tsx",
-                                                    lineNumber: 306,
+                                                    lineNumber: 273,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4901,7 +4873,7 @@ function Contact() {
                                                             children: "Your Message"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/contact.tsx",
-                                                            lineNumber: 325,
+                                                            lineNumber: 292,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4919,7 +4891,7 @@ function Contact() {
                                                                     placeholder: "Tell me about your project..."
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/contact.tsx",
-                                                                    lineNumber: 327,
+                                                                    lineNumber: 294,
                                                                     columnNumber: 21
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -4927,19 +4899,19 @@ function Contact() {
                                                                     children: "💬"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/contact.tsx",
-                                                                    lineNumber: 335,
+                                                                    lineNumber: 302,
                                                                     columnNumber: 21
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/components/contact.tsx",
-                                                            lineNumber: 326,
+                                                            lineNumber: 293,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/contact.tsx",
-                                                    lineNumber: 324,
+                                                    lineNumber: 291,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -4953,14 +4925,14 @@ function Contact() {
                                                                     className: "w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/contact.tsx",
-                                                                    lineNumber: 356,
+                                                                    lineNumber: 323,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     children: "Sending..."
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/contact.tsx",
-                                                                    lineNumber: 357,
+                                                                    lineNumber: 324,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
@@ -4970,14 +4942,14 @@ function Contact() {
                                                                     className: "w-5 h-5"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/contact.tsx",
-                                                                    lineNumber: 361,
+                                                                    lineNumber: 328,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                     children: "Message Sent Successfully!"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/contact.tsx",
-                                                                    lineNumber: 362,
+                                                                    lineNumber: 329,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
@@ -4987,14 +4959,14 @@ function Contact() {
                                                                     children: "Send Message"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/contact.tsx",
-                                                                    lineNumber: 366,
+                                                                    lineNumber: 333,
                                                                     columnNumber: 23
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__["Send"], {
                                                                     className: "w-5 h-5 group-hover:translate-x-1 transition-transform"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/components/contact.tsx",
-                                                                    lineNumber: 367,
+                                                                    lineNumber: 334,
                                                                     columnNumber: 23
                                                                 }, this)
                                                             ]
@@ -5003,13 +4975,13 @@ function Contact() {
                                                             className: "absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/contact.tsx",
-                                                            lineNumber: 372,
+                                                            lineNumber: 339,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/components/contact.tsx",
-                                                    lineNumber: 342,
+                                                    lineNumber: 309,
                                                     columnNumber: 17
                                                 }, this),
                                                 submitted && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5021,7 +4993,7 @@ function Contact() {
                                                                 className: "w-5 h-5 text-emerald-400"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/contact.tsx",
-                                                                lineNumber: 379,
+                                                                lineNumber: 346,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5031,7 +5003,7 @@ function Contact() {
                                                                         children: "Thank you for your message!"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/contact.tsx",
-                                                                        lineNumber: 381,
+                                                                        lineNumber: 348,
                                                                         columnNumber: 25
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5039,61 +5011,61 @@ function Contact() {
                                                                         children: "I'll get back to you within 24 hours."
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/components/contact.tsx",
-                                                                        lineNumber: 382,
+                                                                        lineNumber: 349,
                                                                         columnNumber: 25
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/components/contact.tsx",
-                                                                lineNumber: 380,
+                                                                lineNumber: 347,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/contact.tsx",
-                                                        lineNumber: 378,
+                                                        lineNumber: 345,
                                                         columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/contact.tsx",
-                                                    lineNumber: 377,
+                                                    lineNumber: 344,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/contact.tsx",
-                                            lineNumber: 286,
+                                            lineNumber: 253,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-rose-500/30 rounded-tl-3xl"
                                         }, void 0, false, {
                                             fileName: "[project]/components/contact.tsx",
-                                            lineNumber: 390,
+                                            lineNumber: 357,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-sky-500/30 rounded-br-3xl"
                                         }, void 0, false, {
                                             fileName: "[project]/components/contact.tsx",
-                                            lineNumber: 391,
+                                            lineNumber: 358,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/contact.tsx",
-                                    lineNumber: 272,
+                                    lineNumber: 239,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/contact.tsx",
-                                lineNumber: 271,
+                                lineNumber: 238,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/contact.tsx",
-                        lineNumber: 184,
+                        lineNumber: 151,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5109,7 +5081,7 @@ function Contact() {
                                             children: "Ready to Start Your Project?"
                                         }, void 0, false, {
                                             fileName: "[project]/components/contact.tsx",
-                                            lineNumber: 400,
+                                            lineNumber: 367,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -5117,13 +5089,13 @@ function Contact() {
                                             children: "Let's schedule a call to discuss your requirements and how I can help bring your vision to life."
                                         }, void 0, false, {
                                             fileName: "[project]/components/contact.tsx",
-                                            lineNumber: 401,
+                                            lineNumber: 368,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/contact.tsx",
-                                    lineNumber: 399,
+                                    lineNumber: 366,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -5137,14 +5109,14 @@ function Contact() {
                                                     className: "w-4 h-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/contact.tsx",
-                                                    lineNumber: 410,
+                                                    lineNumber: 377,
                                                     columnNumber: 17
                                                 }, this),
                                                 "Email Me"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/contact.tsx",
-                                            lineNumber: 406,
+                                            lineNumber: 373,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -5155,43 +5127,43 @@ function Contact() {
                                                     className: "w-4 h-4"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/contact.tsx",
-                                                    lineNumber: 417,
+                                                    lineNumber: 384,
                                                     columnNumber: 17
                                                 }, this),
                                                 "Schedule a Call"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/contact.tsx",
-                                            lineNumber: 413,
+                                            lineNumber: 380,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/contact.tsx",
-                                    lineNumber: 405,
+                                    lineNumber: 372,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/contact.tsx",
-                            lineNumber: 398,
+                            lineNumber: 365,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/contact.tsx",
-                        lineNumber: 397,
+                        lineNumber: 364,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/contact.tsx",
-                lineNumber: 165,
+                lineNumber: 132,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/contact.tsx",
-        lineNumber: 158,
+        lineNumber: 125,
         columnNumber: 5
     }, this);
 }
