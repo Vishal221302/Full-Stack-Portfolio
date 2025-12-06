@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { useEffect, useRef, useState } from "react"
-import { Mail, MessageSquare, Send, Phone, MapPin, Clock, Check, Linkedin, Github, Sparkles, Zap } from "lucide-react"
+import { Mail, MessageSquare, Send, Phone, MapPin, Clock, Check, Linkedin, Github, Sparkles, Zap, Instagram } from "lucide-react"
 
 export default function Contact() {
   const sectionRef = useRef<HTMLDivElement>(null)
@@ -85,23 +85,23 @@ export default function Contact() {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "#",
+      href: "https://www.linkedin.com/in/vishal-patel05",
       color: "from-blue-600 to-blue-700",
-      username: "@alexchen"
+      username: "vishal-patel05"
     },
     {
       icon: Github,
       label: "GitHub",
-      href: "#",
+      href: "https://github.com/Vishal221302",
       color: "from-gray-700 to-gray-800",
-      username: "@alexchen"
+      username: "Vishal221302"
     },
     {
-      icon: MessageSquare,
-      label: "Discord",
-      href: "#",
+      icon: Instagram,
+      label: "Instagram",
+      href: "https://www.instagram.com/vishal_patel9043/",
       color: "from-violet-500 to-purple-600",
-      username: "alexchen#1234"
+      username: "vishal_patel9043"
     },
   ]
 
@@ -355,14 +355,14 @@ export default function Contact() {
             </div>
             <div className="flex flex-wrap gap-4 justify-center">
               <a
-                href="mailto:hello@alexchen.dev"
+                href="mailto:vishalpatel221302@gmail.com"
                 className="px-8 py-3 rounded-xl bg-gradient-to-r from-rose-500 to-amber-500 text-white font-semibold hover:shadow-2xl hover:shadow-rose-500/30 transition-all duration-300 hover:-translate-y-1 inline-flex items-center gap-2"
               >
                 <Mail className="w-4 h-4" />
                 Email Me
               </a>
               <a
-                href="#"
+                href="tel:+918175844601"
                 className="px-8 py-3 rounded-xl bg-gradient-to-br from-gray-800 to-gray-900 border border-white/10 text-gray-200 font-medium hover:border-white/20 transition-all duration-300 hover:-translate-y-1 inline-flex items-center gap-2"
               >
                 <Clock className="w-4 h-4" />

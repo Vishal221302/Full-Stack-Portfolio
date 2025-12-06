@@ -6,70 +6,70 @@ import Image from "next/image"
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Life Navigator Panel",
     description:
-      "A full-featured e-commerce platform with real-time inventory, payment processing, and admin dashboard.",
-    tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
-    link: "#",
+      "A React.js-powered platform for managing leads, calling, scheduling, and automating follow-ups through AI calling.",
+    tags: ["React.js", "Laravel", "Stripe", "PostgreSQL","MUI"],
+    link: "https://life.avertisystems.com/",
     github: "#",
-    image: "/projects/ecommerce.jpg",
+    image: "/project_images/lifenavigator.png",
     status: "Live",
     highlights: ["40% faster load times", "99.9% uptime", "50k+ users"],
     color: "from-rose-500 to-amber-500"
   },
   {
-    title: "Task Management App",
+    title: "Client Panel",
     description:
       "Collaborative task management application with real-time updates, team workspaces, and advanced filtering.",
-    tags: ["React", "Node.js", "WebSocket", "MongoDB"],
-    link: "#",
+    tags: ["React", "Laravel", "WebSocket", "Bootstrap","PostgreSQL"],
+    link: "https://client.avertisystems.com/",
     github: "#",
-    image: "/projects/taskapp.jpg",
+    image: "/project_images/client_panel.png",
     status: "Live",
     highlights: ["Real-time collaboration", "Team workspaces", "Advanced filtering"],
     color: "from-sky-500 to-cyan-500"
   },
   {
-    title: "AI Content Generator",
+    title: "DJ Rental",
     description: "AI-powered content generation tool using OpenAI API with user authentication and usage tracking.",
-    tags: ["Next.js", "OpenAI", "Supabase", "Tailwind CSS"],
-    link: "#",
+    tags: ["React.Js", "Node.js", "Mysql", "Bootstrap"],
+    link: "https://midtownav.btruetech.com/",
     github: "#",
-    image: "/projects/ai-generator.jpg",
-    status: "Beta",
+    image: "/project_images/djrental.png",
+    status: "Live",
     highlights: ["AI-powered", "User analytics", "Custom templates"],
     color: "from-emerald-500 to-green-500"
   },
   {
-    title: "Analytics Dashboard",
+    title: "SVM IT Solution",
     description: "Real-time analytics dashboard with interactive charts, data visualization, and custom reports.",
-    tags: ["React", "Chart.js", "Express", "PostgreSQL"],
-    link: "#",
+    tags: ["Next.js", "TypeScript", "Tailwindcss"],
+    link: "https://svmitsolution.com/",
     github: "#",
-    image: "/projects/dashboard.jpg",
+    image: "/project_images/svm_it.png",
     status: "Live",
     highlights: ["Real-time data", "Interactive charts", "Custom reports"],
     color: "from-violet-500 to-purple-500"
   },
   {
-    title: "Social Media App",
+    title: "Calling Dialer",
     description: "Social networking platform with user profiles, posts, comments, and real-time notifications.",
-    tags: ["Next.js", "Firebase", "TailwindCSS", "Vercel"],
-    link: "#",
+    tags: ["React.js", "Bootstrap", "Twilio", "MUI"],
+    link: "/https://call.website-design-india.com",
     github: "#",
-    image: "/projects/social.jpg",
+    image: "/project_images/calling_dailer.png",
     status: "Live",
     highlights: ["Real-time notifications", "User profiles", "Media sharing"],
     color: "from-amber-500 to-orange-500"
   },
   {
-    title: "Portfolio CMS",
+    title: "School Management Systems Dashbaord",
     description: "Headless CMS built for creatives to showcase their work with drag-drop builders and analytics.",
-    tags: ["Next.js", "Prisma", "Vercel", "React"],
-    link: "#",
+    tags: ["React.js", "Tailwindcss", "Vercel"],
+    link: "https://sms-indol.vercel.app/",
     github: "#",
-    image: "/projects/cms.jpg",
-    status: "Open Source",
+    image: "/project_images/SMS.png",
+    status: "Live",
     highlights: ["Drag & drop", "Headless CMS", "Performance analytics"],
     color: "from-fuchsia-500 to-pink-500"
   },
@@ -238,7 +238,7 @@ export default function Projects() {
           <div className="relative rounded-2xl overflow-hidden border border-white/10 bg-gradient-to-br from-gray-800/50 to-gray-900/50">
             <div className="absolute inset-0 bg-gradient-to-r from-rose-500/5 via-amber-500/5 to-sky-500/5" />
             
-            <div className="relative grid lg:grid-cols-2 gap-8 p-8">
+            {/* <div className="relative grid lg:grid-cols-2 gap-8 p-8">
               <div className="space-y-6">
                 <div>
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gradient-to-r from-rose-500/20 to-amber-500/20 border border-white/10 mb-4">
@@ -290,7 +290,7 @@ export default function Projects() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/50 to-transparent" />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
