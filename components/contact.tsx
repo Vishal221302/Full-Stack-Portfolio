@@ -32,19 +32,68 @@ export default function Contact() {
     return () => observer.disconnect()
   }, [])
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500))
-    
-    setSubmitted(true)
-    setIsSubmitting(false)
-    setFormData({ name: "", email: "", message: "" })
-    
-    setTimeout(() => setSubmitted(false), 4000)
+//   const handleSubmit = async (e: React.FormEvent) => {
+//   e.preventDefault();
+//   setIsSubmitting(true);
+
+//   try {
+//     // Send data to Google Sheet
+//     const response = await fetch(
+//       "https://script.google.com/macros/s/AKfycbyL-tmm_PUPauWy-UabmpfvWT1gMPJxE2142EkUTa1fND69olf9mlVuLff5H2XOw1uk/exec",
+//       {
+//         method: "POST",
+//         body: JSON.stringify(formData),
+//       }
+//     );
+
+//     const data = await response.json();
+
+//     if (data.success) {
+//       setSubmitted(true);
+//       setFormData({ name: "", email: "", message: "" });
+
+//       // Hide success message after 4 seconds
+//       setTimeout(() => setSubmitted(false), 4000);
+//     } else {
+//       console.error("Google Script Error:", data);
+//       alert("Something went wrong!");
+//     }
+//   } catch (error) {
+//     console.error("Request Failed:", error);
+//     alert("Error sending data to Google Sheets.");
+//   }
+
+//   setIsSubmitting(false);
+// };
+
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  // ⬇️ Add Google Sheet API call
+  try {
+    await fetch(
+      "https://script.google.com/macros/s/AKfycbyL-tmm_PUPauWy-UabmpfvWT1gMPJxE2142EkUTa1fND69olf9mlVuLff5H2XOw1uk/exec",
+      {
+        method: "POST",
+        body: JSON.stringify(formData),
+      }
+    );
+  } catch (error) {
+    console.log("Google Sheet API Error:", error);
   }
+
+  // Your existing code (unchanged)
+  await new Promise((resolve) => setTimeout(resolve, 1500));
+
+  setSubmitted(true);
+  setIsSubmitting(false);
+  setFormData({ name: "", email: "", message: "" });
+
+  setTimeout(() => setSubmitted(false), 4000);
+};
+
+
 
   const contactInfo = [
     {
