@@ -9,6 +9,7 @@ import Projects from "@/components/projects"
 import Skills from "@/components/skills"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
+import Education from "@/components/education"
 
 export default function Home() {
   const [scrollProgress, setScrollProgress] = useState(0)
@@ -36,6 +37,7 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
+      <Education/>
       <Skills />
       <Projects />
       <Experience />

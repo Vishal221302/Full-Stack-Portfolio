@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { ArrowRight, Github, Linkedin, Mail, Code, Cpu, Database, Terminal, Zap, Globe, Server, Sparkles } from "lucide-react"
+import { ArrowRight, Github, Linkedin, Mail, Code, Cpu, Database, Terminal, Zap, Globe, Server, Sparkles, Download } from "lucide-react"
 import Image from "next/image"
 
 const CodingIcons = [
@@ -170,6 +170,14 @@ export default function Hero() {
               >
                 <span className="relative z-10">Get in Touch</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-rose-500/10 to-amber-500/10 -translate-x-full group-hover:translate-x-0 transition-transform duration-500" />
+              </a>
+              <a
+                href="/vishal_resume.pdf"
+                download="Vishal_Patel_Full_Stack_Developer_CV.pdf"
+                className="group px-6 py-3 lg:px-8 lg:py-4 rounded-xl bg-gradient-to-r from-sky-500 to-cyan-500 text-white font-semibold hover:shadow-2xl hover:shadow-sky-500/30 transition-all duration-300 hover:-translate-y-1 flex items-center justify-center gap-2 lg:gap-3 text-center"
+              >
+                <Download size={18} className="lg:group-hover:translate-y-1 transition-transform duration-300" />
+                <span>Resume</span>
               </a>
             </div>
 
