@@ -42,6 +42,46 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (isOpen) {
+        setIsOpen(false)
+      }
+    }
+
+    if (isOpen) {
+      document.addEventListener("click", handleClickOutside)
+    }
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside)
+    }
+  }, [isOpen])
+
+  // Prevent body scroll when menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = "unset"
+    }
+
+    return () => {
+      document.body.style.overflow = "unset"
+    }
+  }, [isOpen])
+
+  const handleMenuClick = (e: React.MouseEvent) => {
+    e.stopPropagation()
+    setIsOpen(!isOpen)
+  }
+
+  const handleMenuItemClick = (e: React.MouseEvent) => {
+    e.stopPropagation()
+    setIsOpen(false)
+  }
+
   return (
     <header 
       className={`fixed top-0 w-full z-50 transition-all duration-500 ${
@@ -51,11 +91,11 @@ export default function Header() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between relative">
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center gap-2 group z-50"
+            className="flex items-center gap-2 group"
           >
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-r from-rose-500 to-sky-500 rounded-full blur opacity-30 group-hover:opacity-50 transition-opacity duration-300" />
@@ -101,7 +141,7 @@ export default function Header() {
             </div>
           </nav>
 
-          {/* Desktop CTA Button - Fixed Positioning */}
+          {/* Desktop CTA Button */}
           <div className="hidden lg:flex items-center">
             <a
               href="#contact"
@@ -123,8 +163,10 @@ export default function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden p-2.5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 z-50"
-            onClick={() => setIsOpen(!isOpen)}
+            className="lg:hidden p-2.5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300 relative z-50"
+            onClick={handleMenuClick}
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isOpen}
           >
             {isOpen ? (
               <X className="w-5 h-5 text-white" />
@@ -132,56 +174,60 @@ export default function Header() {
               <Menu className="w-5 h-5 text-white" />
             )}
           </button>
-        </div>
 
-        {/* Mobile Navigation */}
-        <div className={`lg:hidden fixed inset-0 top-0 pt-20 transition-all duration-500 ${
-          isOpen 
-            ? "opacity-100 translate-y-0" 
-            : "opacity-0 -translate-y-full pointer-events-none"
-        }`}>
-          <div className="absolute inset-0 bg-gradient-to-b from-gray-950/95 via-gray-900/95 to-gray-950/95 backdrop-blur-xl border-b border-white/10">
-            <div className="max-w-md mx-auto px-6 py-8 flex flex-col gap-2">
-              {navItems.map((item) => {
-                const sectionId = item.href.substring(1)
-                const isActive = activeSection === sectionId
+          {/* Mobile Navigation - Fixed */}
+          <div className={`lg:hidden fixed inset-0 w-full h-screen bg-gradient-to-b from-gray-950 to-gray-900 transition-all duration-300 ease-in-out ${
+            isOpen 
+              ? "opacity-100 visible translate-y-0" 
+              : "opacity-0 invisible -translate-y-2"
+          }`}
+          style={{ 
+            top: '0', 
+            zIndex: 40 
+          }}>
+            <div className="relative w-full h-full pt-20 pb-8 overflow-y-auto">
+              <div className="max-w-md mx-auto px-6 flex flex-col gap-3">
+                {navItems.map((item) => {
+                  const sectionId = item.href.substring(1)
+                  const isActive = activeSection === sectionId
+                  
+                  return (
+                    <a
+                      key={item.href}
+                      href={item.href}
+                      className={`flex items-center justify-between px-6 py-4 rounded-2xl text-lg font-medium transition-all duration-300 ${
+                        isActive 
+                          ? "bg-gradient-to-r from-rose-500/20 to-sky-500/20 text-white border border-white/10" 
+                          : "text-gray-300 hover:text-white hover:bg-white/5"
+                      }`}
+                      onClick={handleMenuItemClick}
+                    >
+                      <span>{item.label}</span>
+                      {isActive && (
+                        <div className="flex items-center gap-2">
+                          <div className="w-2 h-2 rounded-full bg-gradient-to-r from-rose-500 to-sky-500 animate-pulse" />
+                          <Sparkles className="w-4 h-4 text-amber-400" />
+                        </div>
+                      )}
+                    </a>
+                  )
+                })}
                 
-                return (
-                  <a
-                    key={item.href}
-                    href={item.href}
-                    className={`flex items-center justify-between px-6 py-4 rounded-2xl text-lg font-medium transition-all duration-300 ${
-                      isActive 
-                        ? "bg-gradient-to-r from-rose-500/20 to-sky-500/20 text-white border border-white/10" 
-                        : "text-gray-300 hover:text-white hover:bg-white/5"
-                    }`}
-                    onClick={() => setIsOpen(false)}
-                  >
-                    <span>{item.label}</span>
-                    {isActive && (
-                      <div className="flex items-center gap-2">
-                        <div className="w-2 h-2 rounded-full bg-gradient-to-r from-rose-500 to-sky-500 animate-pulse" />
-                        <Sparkles className="w-4 h-4 text-amber-400" />
-                      </div>
-                    )}
-                  </a>
-                )
-              })}
-              
-              {/* Mobile CTA Button */}
-              <a
-                href="#contact"
-                className="group mt-6 px-8 py-4 rounded-2xl bg-gradient-to-r from-rose-500 to-amber-500 text-white font-semibold text-center hover:shadow-2xl hover:shadow-rose-500/30 transition-all duration-300 relative overflow-hidden"
-                onClick={() => setIsOpen(false)}
-              >
-                {/* Glow effect for mobile */}
-                <div className="absolute -inset-0.5 bg-gradient-to-r from-rose-500 to-amber-500 rounded-2xl blur opacity-30 group-hover:opacity-50 transition-opacity duration-300" />
-                
-                <div className="relative z-10 flex items-center justify-center gap-2">
-                  <span>Let's Connect</span>
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                </div>
-              </a>
+                {/* Mobile CTA Button */}
+                <a
+                  href="#contact"
+                  className="group mt-6 px-8 py-4 rounded-2xl bg-gradient-to-r from-rose-500 to-amber-500 text-white font-semibold text-center hover:shadow-2xl hover:shadow-rose-500/30 transition-all duration-300 relative overflow-hidden"
+                  onClick={handleMenuItemClick}
+                >
+                  {/* Glow effect for mobile */}
+                  <div className="absolute -inset-0.5 bg-gradient-to-r from-rose-500 to-amber-500 rounded-2xl blur opacity-30 group-hover:opacity-50 transition-opacity duration-300" />
+                  
+                  <div className="relative z-10 flex items-center justify-center gap-2">
+                    <span>Let's Connect</span>
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
