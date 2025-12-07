@@ -55,7 +55,7 @@ const projects = [
     title: "Calling Dialer",
     description: "Social networking platform with user profiles, posts, comments, and real-time notifications.",
     tags: ["React.js", "Bootstrap", "Twilio", "MUI"],
-    link: "/https://call.website-design-india.com",
+    link: "https://call.website-design-india.com",
     github: "#",
     image: "/project_images/calling_dailer.png",
     status: "Live",
