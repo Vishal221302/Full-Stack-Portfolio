@@ -10,9 +10,12 @@ import Skills from "@/components/skills"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
 import Education from "@/components/education"
+import CustomCursor from "@/components/customecursor"
 
 export default function Home() {
   const [scrollProgress, setScrollProgress] = useState(0)
+   const [isClient, setIsClient] = useState(false);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,6 +23,8 @@ export default function Home() {
       const scrolled = window.scrollY
       const progress = scrollHeight > 0 ? (scrolled / scrollHeight) * 100 : 0
       setScrollProgress(progress)
+          setIsClient(true);
+
     }
 
     window.addEventListener("scroll", handleScroll)
@@ -33,6 +38,7 @@ export default function Home() {
         className="fixed top-0 left-0 h-1 bg-gradient-to-r from-primary via-accent to-primary z-50 transition-all"
         style={{ width: `${scrollProgress}%` }}
       />
+      {isClient && <CustomCursor />}
 
       <Header />
       <Hero />
