@@ -10,7 +10,7 @@ import Skills from "@/components/skills"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
 import Education from "@/components/education"
-import CustomCursor from "@/components/customecursor"
+import CustomCursor from "@/components/customcursor"
 
 export default function Home() {
   const [scrollProgress, setScrollProgress] = useState(0)
