@@ -144,7 +144,7 @@ export default function Hero() {
             <div className="space-y-3">
               <p className="text-sm font-medium text-gray-400">TECH STACK</p>
               <div className="flex flex-wrap gap-2 lg:gap-3">
-                {['React', 'Next.js', 'React Native', 'Node.js', 'Tailwind', 'MongoDB', 'Figma', 'Myqsl'].map((tech) => (
+                {['React', 'Next.js', 'React Native', 'Node.js', 'Tailwind', 'MongoDB', 'Figma', 'Mysql'].map((tech) => (
                   <span
                     key={tech}
                     className="px-3 py-1.5 lg:px-4 lg:py-2 rounded-lg text-sm font-medium bg-gradient-to-br from-gray-800 to-gray-900 border border-white/10 hover:border-rose-500/30 hover:from-rose-500/10 hover:to-rose-500/5 transition-all duration-300 cursor-default group"
