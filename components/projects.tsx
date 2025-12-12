@@ -8,69 +8,80 @@ const projects = [
   {
     title: "Life Navigator Panel",
     description:
-      "A React.js-powered platform for managing leads, calling, scheduling, and automating follow-ups through AI calling.",
+      "Life Navigator Panel organizes calls, tasks, and essential services in one streamlined React.js interface, helping users manage daily workflows efficiently.",
     tags: ["React.js", "Laravel", "Stripe", "PostgreSQL","MUI"],
     link: "https://life.avertisystems.com/",
     github: "#",
     image: "/project_images/lifenavigator.png",
     status: "Live",
-    highlights: ["40% faster load times", "99.9% uptime", "50k+ users"],
+    highlights: ["Centralized tasks and call management", "Smooth, responsive React.js interface", "Easy access to all essential services"],
     color: "from-rose-500 to-amber-500"
   },
   {
     title: "Client Panel",
     description:
-      "Collaborative task management application with real-time updates, team workspaces, and advanced filtering.",
+      "Client Panel allows users to request services, manage tasks, track progress, and communicate easily through a secure and organized online portal.",
     tags: ["React", "Laravel", "WebSocket", "Bootstrap","PostgreSQL"],
     link: "https://client.avertisystems.com/",
     github: "#",
     image: "/project_images/client_panel.png",
     status: "Live",
-    highlights: ["Real-time collaboration", "Team workspaces", "Advanced filtering"],
+    highlights: ["Simple service request and task tracking", "Clear status updates and progress overview", "Secure, user-friendly client portal"],
     color: "from-sky-500 to-cyan-500"
   },
   {
     title: "DJ Rental",
-    description: "AI-powered content generation tool using OpenAI API with user authentication and usage tracking.",
+    description: "DJ Rental platform allows users to easily book DJs, lighting, and decoration services for events with fast scheduling and seamless online booking.",
     tags: ["React.Js", "Node.js", "Mysql", "Bootstrap"],
     link: "https://midtownav.btruetech.com/",
     github: "#",
     image: "/project_images/djrental.png",
     status: "Live",
-    highlights: ["AI-powered", "User analytics", "Custom templates"],
+    highlights: ["Easy DJ and lighting booking", "Event-ready decoration services", "Fast, simple online scheduling"],
     color: "from-emerald-500 to-green-500"
   },
   {
     title: "SVM IT Solution",
-    description: "Real-time analytics dashboard with interactive charts, data visualization, and custom reports.",
+    description: "VM IT Solution delivers modern IT services, web development, and digital solutions with a professional Next.js website focused on speed, security, and performance.",
     tags: ["Next.js", "TypeScript", "Tailwindcss"],
     link: "https://svmitsolution.com/",
     github: "#",
     image: "/project_images/svm_it.png",
     status: "Live",
-    highlights: ["Real-time data", "Interactive charts", "Custom reports"],
+    highlights: ["Fast, SEO-optimized Next.js website for better user experience", "Professional presentation of IT services and solutions", "Secure, scalable structure ready for future expansion"],
     color: "from-violet-500 to-purple-500"
   },
   {
     title: "Calling Dialer",
-    description: "Social networking platform with user profiles, posts, comments, and real-time notifications.",
+    description: "A React.js dialer using Twilio enables secure, real-time calling from the browser with fast UI, easy controls, and seamless call management.",
     tags: ["React.js", "Bootstrap", "Twilio", "MUI"],
     link: "https://call.website-design-india.com",
     github: "#",
     image: "/project_images/calling_dailer.png",
     status: "Live",
-    highlights: ["Real-time notifications", "User profiles", "Media sharing"],
+    highlights: ["Web-Based Calling (No Hardware Required)", "Secure Authentication Using Twilio Tokens", "Real-Time Call Controls"],
     color: "from-amber-500 to-orange-500"
   },
   {
     title: "School Management Systems Dashbaord",
-    description: "Headless CMS built for creatives to showcase their work with drag-drop builders and analytics.",
-    tags: ["React.js", "Tailwindcss", "Vercel"],
+    description: "A School Management System Dashboard offers centralized control for attendance, students, teachers, exams, and reports with an intuitive, fast, and organized interface.",
+    tags: ["Next.js", "Tailwindcss", "Vercel"],
     link: "https://sms-indol.vercel.app/",
     github: "#",
     image: "/project_images/SMS.png",
     status: "Live",
-    highlights: ["Drag & drop", "Headless CMS", "Performance analytics"],
+    highlights: ["Easy student & teacher management", "Quick attendance and exam tracking", "Real-time performance reports"],
+    color: "from-fuchsia-500 to-pink-500"
+  },
+  {
+    title: "Task Management Systems",
+    description: "Next.js Task Management System organizes projects, tasks, teams, and deadlines with realtime updates, secure auth, and scalable performance for businesses",
+    tags: ["Next.js", "Tailwindcss", "Vercel"],
+    link: "https://projecthub-eight.vercel.app/",
+    github: "#",
+    image: "/project_images/project-management.png",
+    status: "Live",
+    highlights: ["Real-time task updates and notifications", "Role-based access and secure authentication", "Scalable Next.js frontend with API integration"],
     color: "from-fuchsia-500 to-pink-500"
   },
 ]
@@ -168,9 +179,9 @@ export default function Projects() {
                 {/* Content */}
                 <div className="p-6 relative z-10">
                   <div className="mb-4">
-                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-rose-400 group-hover:to-amber-400 transition-all duration-300">
+                    <a href={project.link} className="text-xl font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-rose-400 group-hover:to-amber-400 transition-all duration-300">
                       {project.title}
-                    </h3>
+                    </a>
                     <p className="text-gray-400 text-sm leading-relaxed">
                       {project.description}
                     </p>
