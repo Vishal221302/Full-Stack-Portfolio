@@ -84,6 +84,17 @@ const projects = [
     highlights: ["Real-time task updates and notifications", "Role-based access and secure authentication", "Scalable Next.js frontend with API integration"],
     color: "from-fuchsia-500 to-pink-500"
   },
+  {
+    title: "House Facts",
+    description: "House Fact provides comprehensive home services—complete house flooring, renovations, and installations—delivered professionally with quality materials and skilled teams on-time guarantee.",
+    tags: ["React.js", "Tailwindcss", "Supabase"],
+    link: "https://house.btruetech.com/",
+    github: "#",
+    image: "/project_images/housefacts.png",
+    status: "Live",
+    highlights: ["Full-house flooring installations (tiles, wood, laminate)", "Professional renovations and finishing services", "Quality materials, skilled crew, and timely completion"],
+    color: "from-rose-500 to-amber-500"
+  },
 ]
 
 export default function Projects() {
