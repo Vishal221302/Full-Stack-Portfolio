@@ -90,7 +90,7 @@ const projects = [
     tags: ["React.js", "Tailwindcss", "Supabase"],
     link: "https://house.btruetech.com/",
     github: "#",
-    image: "/project_images/doctor_portal.png",
+    image: "/project_images/housefacts.png",
     status: "Live",
     highlights: ["Full-house flooring installations (tiles, wood, laminate)", "Professional renovations and finishing services", "Quality materials, skilled crew, and timely completion"],
     color: "from-rose-500 to-amber-500"
@@ -101,10 +101,10 @@ const projects = [
     tags: ["React.js", "Tailwindcss"],
     link: "https://doctorportal-three.vercel.app/",
     github: "#",
-    image: "/project_images/housefacts.png",
+    image: "/project_images/doctor_portal.png",
     status: "Live",
     highlights: ["Appointment scheduling and management", "Digital patient records and prescriptions", "Secure doctor–patient communication"],
-    color: "from-rose-500 to-amber-500"
+    color: "from-sky-500 to-cyan-500"
   },
 ]
 
